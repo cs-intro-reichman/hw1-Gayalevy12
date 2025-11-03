@@ -3,9 +3,9 @@ public class NumWords {
 	public static void main(String args[]) {
 	    // Replace this comment with your 
 		int NumWords = Integer.parseInt(args[0]);
-		System.out.println((NumWords/100) + " hundreds");
-		System.out.println(((NumWords%100)/10) + " tens");
-		System.out.println("and " + (NumWords%10) + " ones");
+		System.out.print((NumWords/100) + " hundreds, ");
+		System.out.print(((NumWords%100)/10) + " tens, ");
+		System.out.print("and " + (NumWords%10) + " ones.");
 
 	}
 }
