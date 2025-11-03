@@ -9,10 +9,10 @@ public class FVCalc
 		// Replace this comment with your code
 		int currentValue = Integer.parseInt(args[0]);
 		Double rant = Double.parseDouble(args[1]);
-		rant = rant / 100.00;
+		double rantnew = rant / 100.00;
 		int numofyear = Integer.parseInt(args[2]);
-		double FutureValue = currentValue * (Math.pow(1+rant ,(double)numofyear));
-		System.out.println(" after " + numofyear + " years, $" + currentValue + " saved at " + rant*100 + "% will yield " + "$" + (int)FutureValue);
+		double FutureValue = currentValue * (Math.pow(1+ rantnew ,numofyear));
+		System.out.println(" after " + numofyear + " years, $" + currentValue + " saved at " + rant + "% will yield " + "$" + (int)FutureValue);
 		
 		
 
