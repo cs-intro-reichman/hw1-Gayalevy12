@@ -12,7 +12,7 @@ public class FVCalc
 		rant = rant / 100.00;
 		int numofyear = Integer.parseInt(args[2]);
 		double FutureValue = currentValue * (Math.pow(1+rant ,(double)numofyear));
-		System.out.println(" after " + numofyear + " years, $" + currentValue + " saved at " + rant + "% will yield " + " $" + (int)FutureValue);
+		System.out.println(" after " + numofyear + " years, $" + currentValue + " saved at " + rant*100 + "% will yield " + "$" + (int)FutureValue);
 		
 		
 
